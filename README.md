@@ -14,6 +14,8 @@
 * netty
 * apache-tomcat
 
-> 分布式、高可用、数据处理
+> 分布式、高可用、数据存储、数据处理
 * apache-kafka
 * elasticsearch
+* apache-hadoop
+* apache-hbase
