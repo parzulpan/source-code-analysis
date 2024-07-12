@@ -7,9 +7,11 @@
     <list default="true" id="4e56117a-cc8e-4cf7-a503-f7a7e2e19c89" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/NettyClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/NettyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/BIOClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/BIOClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/BIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/BIOServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/NIOClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/NIOClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/NIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/NIOServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/redisprotocol/RedisClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/redisprotocol/RedisClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +31,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2ijRf5yPyKh1zS4Zd8tqpghl6uT" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -40,27 +42,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/parzulpan/parzulpan/code/parzulpan/source-code-analysis/netty-sca/src/main/java/com/parzulpan/sca/netty",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "fileTemplates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/parzulpan/parzulpan/code/parzulpan/source-code-analysis/netty-sca/src/main/java/com/parzulpan/sca/netty&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ClientB">
+  <component name="RunManager" selected="Application.ProtoExample">
     <configuration name="ClientA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.parzulpan.sca.netty.heartbeat.ClientA" />
       <module name="netty-sca" />
@@ -87,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HalfPackageClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.parzulpan.sca.netty.xpackage.HalfPackageClient" />
+    <configuration name="HttpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.parzulpan.sca.netty.httpprotocol.HttpServer" />
       <module name="netty-sca" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.parzulpan.sca.netty.xpackage.*" />
+          <option name="PATTERN" value="com.parzulpan.sca.netty.httpprotocol.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HalfPackageServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.parzulpan.sca.netty.xpackage.HalfPackageServer" />
+    <configuration name="ProtoExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.parzulpan.sca.netty.protobuf.ProtoExample" />
       <module name="netty-sca" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.parzulpan.sca.netty.xpackage.*" />
+          <option name="PATTERN" value="com.parzulpan.sca.netty.protobuf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.parzulpan.sca.netty.heartbeat.Server" />
+    <configuration name="RedisClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.parzulpan.sca.netty.redisprotocol.RedisClient" />
       <module name="netty-sca" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.parzulpan.sca.netty.heartbeat.*" />
+          <option name="PATTERN" value="com.parzulpan.sca.netty.redisprotocol.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProtoExample" />
+        <item itemvalue="Application.RedisClient" />
+        <item itemvalue="Application.HttpServer" />
         <item itemvalue="Application.ClientB" />
         <item itemvalue="Application.ClientA" />
-        <item itemvalue="Application.Server" />
-        <item itemvalue="Application.HalfPackageClient" />
-        <item itemvalue="Application.HalfPackageServer" />
       </list>
     </recent_temporary>
   </component>
@@ -145,6 +147,7 @@
       <option name="presentableId" value="Default" />
       <updated>1720002101378</updated>
       <workItem from="1720002102672" duration="35807000" />
+      <workItem from="1720780638521" duration="632000" />
     </task>
     <servers />
   </component>

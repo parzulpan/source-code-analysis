@@ -4,6 +4,10 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/**
+ * @author panpan
+ * @since 2024/07
+ */
 public class BIOServer {
     public static void main(String[] args) throws IOException {
         System.out.println(">>>>>>>...BIO服务端启动...>>>>>>>>");

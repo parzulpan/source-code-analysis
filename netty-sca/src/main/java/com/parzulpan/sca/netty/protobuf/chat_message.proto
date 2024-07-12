@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.parzulpan.sca.netty.protobuf;
+
+message ChatMessage {
+  string sender_id = 1;
+  string receiver_id = 2;
+  string content = 3;
+  enum MessageType {
+    TEXT = 0;
+    IMAGE = 1;
+    FILE = 2;
+  }
+  MessageType message_type = 4;
+}

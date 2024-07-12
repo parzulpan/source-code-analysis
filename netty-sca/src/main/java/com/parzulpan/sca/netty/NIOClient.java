@@ -5,6 +5,10 @@ import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
+/**
+ * @author panpan
+ * @since 2024/07
+ */
 public class NIOClient {
     public static void main(String[] args) throws IOException {
         System.out.println(">>>>>>>...NIO客户端启动...>>>>>>>>");

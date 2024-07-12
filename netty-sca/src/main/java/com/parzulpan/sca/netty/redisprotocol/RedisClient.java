@@ -36,9 +36,13 @@ public class RedisClient {
                                         // 通道建立成功后调用：向Redis发送一条set命令
                                         @Override
                                         public void channelActive(ChannelHandlerContext ctx) throws Exception {
-                                            String cmd = "set name panpan";
-                                            ByteBuf buffer = respCommand(cmd);
-                                            ctx.channel().writeAndFlush(buffer);
+                                            String authCommand = "AUTH " + "xx";
+                                            ByteBuf buffer1 = respCommand(authCommand);
+                                            ctx.writeAndFlush(buffer1);
+
+                                            String cmd = "set crm.test.name panpan";
+                                            ByteBuf buffer2 = respCommand(cmd);
+                                            ctx.channel().writeAndFlush(buffer2);
                                         }
 
                                         // Redis响应数据时触发：打印Redis的响应结果
@@ -61,7 +65,7 @@ public class RedisClient {
 
     /**
      * RESP客户端协议
-     *
+     * <p>
      * 1. 首先要求所有命令，都以*开头，后面跟着具体的子命令数量，接着用换行符分割。
      * 2. 接着需要先用$符号声明每个子命令的长度，然后再用换行符分割。
      * 3. 最后再拼接上具体的子命令，同样用换行符分割。

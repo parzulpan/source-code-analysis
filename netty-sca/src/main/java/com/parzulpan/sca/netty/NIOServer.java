@@ -9,6 +9,10 @@ import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 
+/**
+ * @author panpan
+ * @since 2024/07
+ */
 public class NIOServer {
     public static void main(String[] args) throws IOException {
         System.out.println(">>>>>>>...NIO服务端启动...>>>>>>>>");
