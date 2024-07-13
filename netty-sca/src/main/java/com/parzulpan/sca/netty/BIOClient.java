@@ -4,6 +4,10 @@ import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
+/**
+ * @author panpan
+ * @since 2024/07
+ */
 public class BIOClient {
     public static void main(String[] args) throws UnknownHostException, IOException {
         System.out.println(">>>>>>>...BIO客户端启动...>>>>>>>>");

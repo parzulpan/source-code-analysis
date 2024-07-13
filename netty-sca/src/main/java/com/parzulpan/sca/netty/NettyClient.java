@@ -2,6 +2,7 @@ package com.parzulpan.sca.netty;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -11,7 +12,7 @@ import io.netty.handler.codec.string.StringEncoder;
 import io.netty.util.CharsetUtil;
 
 /**
- * @author chengyan
+ * @author panpan
  * @since 2024/07
  */
 public class NettyClient {
@@ -33,11 +34,21 @@ public class NettyClient {
                     });
             // 与指定的地址建立连接
             ChannelFuture cf = client.connect("127.0.0.1", 8888).sync();
-            // 建立连接成功后，向服务端发送数据
-            System.out.println("正在向服务端发送信息......");
-            cf.channel().writeAndFlush("我是<竹子爱熊猫>！");
+
+//            // 同步实现
+//            // 建立连接成功后，向服务端发送数据
+//            System.out.println("正在向服务端发送信息......");
+//            cf.channel().writeAndFlush("我是<竹子爱熊猫>！");
+
+            // 异步实现
+            cf.addListener((ChannelFutureListener) cfl -> {
+                // 建立连接成功后，向服务端发送数据
+                System.out.println("正在向服务端发送信息......");
+                cf.channel().writeAndFlush("我是<竹子爱熊猫>！");
+            });
+
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         } finally {
             worker.shutdownGracefully();
         }

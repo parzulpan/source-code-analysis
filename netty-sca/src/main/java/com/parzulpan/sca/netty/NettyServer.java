@@ -9,7 +9,7 @@ import io.netty.handler.codec.string.StringDecoder;
 import io.netty.util.CharsetUtil;
 
 /**
- * @author parzulpan
+ * @author panpan
  * @since 2024/07
  */
 public class NettyServer {
@@ -46,8 +46,21 @@ public class NettyServer {
                     });
             // 为当前服务端绑定IP与端口地址(sync是同步阻塞至连接成功为止)
             ChannelFuture cf = server.bind("127.0.0.1", 8888).sync();
-            // 关闭服务端的方法（之后不会在这里关闭）
-            cf.channel().closeFuture().sync();
+            System.out.println("服务端已启动......");
+
+//            // 同步实现
+//            // 关闭服务端的方法（之后不会在这里关闭）
+//            cf.channel().closeFuture().sync();
+//            System.out.println("服务端已关闭......");
+
+            // 异步实现
+            ChannelFuture closeCF = cf.channel().closeFuture().sync();
+            closeCF.addListener((ChannelFutureListener) cfl -> {
+                // 关闭前面创建的EventLoopGroup事件组，也可以在这里做其他善后工作
+                worker.shutdownGracefully();
+                System.out.println("服务端已关闭......");
+            });
+
         } finally {
             // 优雅停止之前创建的两个Group
             boss.shutdownGracefully();
