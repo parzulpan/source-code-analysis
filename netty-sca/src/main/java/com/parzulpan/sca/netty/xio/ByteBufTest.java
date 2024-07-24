@@ -1,4 +1,4 @@
-package com.parzulpan.sca.netty;
+package com.parzulpan.sca.netty.xio;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;

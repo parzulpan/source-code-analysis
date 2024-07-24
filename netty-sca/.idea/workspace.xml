@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e56117a-cc8e-4cf7-a503-f7a7e2e19c89" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../jdk-sca/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdk-sca/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdk-sca/src/main/java/com/parzulpan/sca/jdk/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdk-sca/src/test/java/com/parzulpan/sca/jdk/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/BIOClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/BIOClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/BIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/BIOServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/NIOClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/NIOClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/NIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/NIOServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/redisprotocol/RedisClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/redisprotocol/RedisClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/BIOClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/xio/BIOClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/BIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/xio/BIOServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/ByteBufTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/xio/ByteBufTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/NIOClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/xio/NIOClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/NIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/xio/NIOServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/xio/NettyClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/xio/NettyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/chatmessageprotocol/ChatMessageCodec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/chatmessageprotocol/ChatMessageCodec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/chatmessageprotocol/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parzulpan/sca/netty/chatmessageprotocol/Message.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -147,7 +155,7 @@
       <option name="presentableId" value="Default" />
       <updated>1720002101378</updated>
       <workItem from="1720002102672" duration="35807000" />
-      <workItem from="1720780638521" duration="632000" />
+      <workItem from="1720780638521" duration="8178000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-package com.parzulpan.sca.netty;
+package com.parzulpan.sca.netty.xio;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
